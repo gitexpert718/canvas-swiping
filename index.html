@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas-Swing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <!-- <link rel="icon" href="img/arrow/logo.png" type="image/x-icon"> -->
+    </head>
+    <body>
+        <div style="padding: 50px;">
+            <h1>Canvas Swing</h1>
+            <div style="width: 400px; height: 400px; border: 1px solid grey; position: absolute;">
+                <div id="canvasDiv" style="width: 0px; height: 0px; position: absolute; left: 200px; top: 40px;">
+                </div>
+            </div>
+            <div class="btn-group" style="margin-top: 30px; position: absolute; top: 500px;">
+                <button type="button" class="btn btn-primary" onclick="startSwingImg()">Start Swing</button>&nbsp;&nbsp;
+                <button type="button" class="btn btn-danger" onclick="stopSwingImg()">Stop Swing</button>
+            </div>
+            <div id="hide-img-swinging" style="display: none;">
+                <img id="swinger-img1" src="img/earring1.png">
+                <img id="swinger-img2" src="img/earring3.png">
+                <img id="swinger-img3" src="img/earring6.png">
+                <img id="swinger-img4" src="img/earring7.png">
+                <img id="swinger-img5" src="img/earring9.png">
+            </div>
+        </div>
+        <div style="position: absolute; left: 500px;">
+            <select id="selectItem" name="selectItem" onchange="ChangeImage()">
+                <option value="1">Earring1</option>
+                <option value="2">Earring2</option>
+                <option value="3">Earring3</option>
+                <option value="4">Earring4</option>
+                <option value="5">Earring5</option>
+            </select>
+        </div>
+    </body>
+    <script src="js/index.js"></script>
+</html>
